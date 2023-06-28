@@ -62,14 +62,18 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mob-menu-open" .js-menu-container>
+        <button
+          class="mob-menu-open js-menu-container"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
           <svg class="mob-menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
           </svg>
         </button>
-        <div class="mob-menu" .js-menu-container>
+        <div class="mob-menu js-menu-container" id="menu">
           <div>
-            <button type="button" class="mob-menu-close" .js-close-menu>
+            <button type="button" class="mob-menu-close js-close-menu">
               <svg class="mob-close-icon" width="8" height="8">
                 <use
                   href="./images/icons.svg#icon-close-black-18dp-2-1-1"

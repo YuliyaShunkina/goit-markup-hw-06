@@ -86,17 +86,6 @@ img {
   stroke: #2e2f42;
 }
 .mob-menu {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  padding: 24px 24px 24px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   position: fixed;
   top: 0;
   left: 0;
