@@ -1146,6 +1146,9 @@ img {
   .product-item {
     width: calc((100% - 96px) / 2);
   }
+  .modal {
+    width: 408px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
