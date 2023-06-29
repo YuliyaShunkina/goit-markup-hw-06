@@ -57,6 +57,88 @@
             </li>
           </ul>
         </address>
+        <button
+          class="mob-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg class="mob-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu js-menu-container" id="menu">
+          <div>
+            <button type="button" class="mob-menu-close js-close-menu">
+              <svg class="mob-close-icon" width="8" height="8">
+                <use
+                  href="./images/icons.svg#icon-close-black-18dp-2-1-1"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mob-adress list">
+              <li class="mob-phone-item link">
+                <a class="mob-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social list">
+              <li class="mob-social-icon">
+                <a href="" target="blank" class="mob-social-link">
+                  <svg class="mob-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mob-social-icon">
+                <a href="" target="blank" class="mob-social-link">
+                  <svg class="mob-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-icon">
+                <a href="" target="blank" class="mob-social-link">
+                  <svg class="mob-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-icon">
+                <a href="" target="blank" class="mob-social-link">
+                  <svg class="mob-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -82,9 +164,11 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="./images/bank1x.jpg 1x, ./images/bank2x.jpg 2x"
                     src="./images/bankingapp.jpg"
                     alt="Banking app interface"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -104,9 +188,14 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="
+                      ./images/cashless1x.jpg 1x,
+                      ./images/cashless2x.jpg 2x
+                    "
                     src="./images/cashless.jpg"
                     alt="Cashless Payment"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -124,9 +213,14 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="
+                      ./images/meditation1x.jpg 1x,
+                      ./images/meditation2x.jpg 2x
+                    "
                     src="./images/meditation.jpg"
                     alt="Meditation App"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -143,7 +237,13 @@
             <li class="product-item">
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
-                  <img src="./images/taxi.jpg" alt="Taxi" width="360" />
+                  <img
+                    srcset="./images/taxi1x.jpg 1x, ./images/taxi2x.jpg 2x"
+                    src="./images/taxi.jpg"
+                    alt="Taxi"
+                    width="360"
+                    class="product-image"
+                  />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -160,9 +260,11 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="./images/screen1x.jpg 1x, ./images/screen2x.jpg 2x"
                     src="./images/screen.jpg"
                     alt="Screen design"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -180,9 +282,14 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="
+                      ./images/courses1x.jpg 1x,
+                      ./images/courses2x.jpg 2x
+                    "
                     src="./images/courses.jpg"
                     alt="Online courses"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -200,9 +307,11 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="./images/insta1x.jpg 1x, ./images/insta2x.jpg 2x"
                     src="./images/insta.jpg"
                     alt="Instagram stories"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -219,7 +328,16 @@
             <li class="product-item">
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
-                  <img src="./images/food.jpg" alt="Organic Food" width="360" />
+                  <img
+                    srcset="
+                      ./images/organic1x.jpg 1x,
+                      ./images/organic2x.jpg 2x
+                    "
+                    src="./images/food.jpg"
+                    alt="Organic Food"
+                    width="360"
+                    class="product-image"
+                  />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -236,9 +354,11 @@
               <a href="" class="product-item-link link">
                 <div class="product-overlay">
                   <img
+                    srcset="./images/coffee1x.jpg 1x, ./images/coffee2x.jpg 2x"
                     src="./images/coffee.jpg"
                     alt="Cup of coffee"
                     width="360"
+                    class="product-image"
                   />
                   <p class="product-overlay-txt">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -324,5 +444,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
