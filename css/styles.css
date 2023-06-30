@@ -112,6 +112,8 @@ img {
   height: 24px;
   border-radius: 50%;
   border: 1px solid #2e2f42;
+  padding: 0;
+  line-height: 0;
 }
 .mob-close-icon {
   fill: #2e2f42;
@@ -124,10 +126,10 @@ img {
 .mob-menu-link {
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--headings-color);
+  color: #2e2f42;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,18 +139,27 @@ img {
   color: #404bbf;
 }
 .mob-phone-item {
+}
+.mob-phone-link {
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
-.mob-adress {
+
+.mob-address-link {
   color: #434455;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 48px;
+}
+.mob-address {
+  /* color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 48px; */
 }
 
 .mob-social {
@@ -298,9 +309,9 @@ img {
   gap: 72px;
 }
 .descrip-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--headings-color);
   margin-bottom: 8px;
@@ -308,6 +319,7 @@ img {
 }
 .descrip-list-descrip {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -758,7 +770,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100% - 30px);
+  width: 324px;
+  /* width: calc(100% - 30px); */
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -1029,7 +1042,7 @@ img {
   }
 
   .header-address-link {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -1080,19 +1093,21 @@ img {
   .descrip-list-title {
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 0.72;
+    letter-spacing: 0.02em;
     text-align: start;
   }
 
   .team-list {
     align-items: center;
     justify-content: center;
+    row-gap: 64px;
   }
   .team-item {
     width: calc((100% - 72px) / 2);
     gap: 24px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
   .customer-list-box {
     max-width: 584px;
@@ -1201,6 +1216,9 @@ img {
     gap: 24px;
     flex-wrap: nowrap;
   }
+  .descrip-list-descrip {
+    font-weight: 400;
+  }
   .descrip-icon-background {
     display: flex;
   }
@@ -1240,6 +1258,9 @@ img {
 
   .customer-list-item {
     width: calc((100% - 120px) / 6);
+  }
+  .footer-media-title {
+    text-align: start;
   }
   .footer-txt-container {
     flex-wrap: unset;
